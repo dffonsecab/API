@@ -39,7 +39,7 @@ namespace WebApiVentas.Controllers
 
             var listas = await _dbPruebaContext.Productos.ToListAsync();
 
-            return listas;
+            return listas.ToList();
 
         }
 
