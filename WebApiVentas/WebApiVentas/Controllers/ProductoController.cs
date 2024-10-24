@@ -32,19 +32,20 @@ namespace WebApiVentas.Controllers
 
         /* Listar Productos */
 
-        [HttpGet]
-        [Route("Lista")]
+        /**
+ 
         public async Task<List<Producto>> lista()
         {
 
             var listas = await _dbPruebaContext.Productos.ToListAsync();
 
-            return listas.ToList();
+            return listas;
 
         }
+        **/
 
-
-        /**
+        [HttpGet]
+        [Route("Lista")]
         public async Task<IActionResult> lista()
         {
 
@@ -54,7 +55,7 @@ namespace WebApiVentas.Controllers
 
 
         }
-        **/
+        
 
 
         /* --------------- Adicionar Productos ----------------------------- */
